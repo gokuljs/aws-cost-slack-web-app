@@ -1,0 +1,115 @@
+.Login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .Login__container {
+    width: 22.5rem;
+    height: 14.063rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.875rem;
+    .pista-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo {
+        border-radius: 1rem;
+        height: 60px;
+      }
+    }
+    .login-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap: 1.25rem;
+      width: 100%;
+      .title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 2.375rem;
+        color: var(--slate12);
+      }
+      .login-btn {
+        .google-icon {
+          margin-right: 8px;
+        }
+        all: unset;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        border-radius: 6px;
+        background: white;
+        align-items: center;
+        border: none;
+        width: 15rem;
+        height: 2.25rem;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+        .google-logo {
+          width: 1rem;
+          height: 1rem;
+          margin-right: 0.5rem;
+        }
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        background-color: #386dff;
+        color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 48, 194, 0.25),
+          0px 4px 12px 2px rgba(0, 48, 194, 0.15),
+          inset 0px 1px 0px rgba(255, 255, 255, 0.2),
+          inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        border: none;
+        &:hover,
+        &:focus {
+          outline: none;
+          background-color: #003feb;
+          box-shadow: 0px 3px 6px rgba(0, 48, 194, 0.25),
+            0px 6px 14px 2px rgba(0, 48, 194, 0.15),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.2),
+            inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+        &:active {
+          background-color: #0030c2;
+          box-shadow: 0px 1px 2px rgba(0, 48, 194, 0.25),
+            0px 1px 3px 2px rgba(0, 48, 194, 0.15),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.2),
+            inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+        &:disabled,
+        &:disabled:hover {
+          box-shadow: none;
+          background-color: #0030c2;
+          color: #ebf0ff;
+        }
+      }
+      .note {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--slate10);
+      }
+    }
+  }
+  animation: bounceIn 1s ease-in-out;
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
